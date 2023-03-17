@@ -8,7 +8,7 @@
  *
  */
 
-int main(void)
+int main(void) /* main - prints numbers*/
 {
 	int n;
 
