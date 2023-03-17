@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers
- * return : Always (Success)
- * 
+ * main - main function
+ *
+ * Return: always 0
  */
+
 int main(void)
 {
 	int n;
