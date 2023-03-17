@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - Prints if number is positive, zero or negative
+ * main - Prints numbers
  * Return : Always (Success)
  *
  */
 
-int main(void) /* main - prints numbers*/
+int main(void)
 {
 	int n;
 
