@@ -4,11 +4,10 @@
 
 /**
  * main - Prints numbers
- * Return : Always (Success)
- *
+ * return : Always (Success)
+ * 
  */
-
-int main(void) /* main - print numbers*/
+int main(void)
 {
 	int n;
 
