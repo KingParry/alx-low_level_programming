@@ -1,3 +1,7 @@
-int main(int argc, char *argv[]);
+#define MAIN.H
 
-int _putchar(void);
+int _putchar(char c);
+
+int _atoi(char *s);
+
+#endif
