@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - main program start up
@@ -8,9 +8,9 @@
  * @argv: arg vector
  * Return: return 0
  */
+
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	(void) argc;
-	printf("%s\n", argv[0]);
+	printf("%s\n", *argv);
 	return (0);
 }
