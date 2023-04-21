@@ -3,7 +3,7 @@
 /**
  *  sum_them_all -main function
  *  @n: const
- *  Return: always 0
+ *  Return: sum
  */
 
 int sum_them_all(const unsigned int n, ...)
