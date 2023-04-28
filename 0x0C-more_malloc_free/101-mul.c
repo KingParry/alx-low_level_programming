@@ -23,7 +23,7 @@ int is_digit(char *s)
 /**
  * _strlen - function 2
  * @s: string
- * Returnn: always 0
+ * Return: always 0
  */
 int _strlen(char *s)
 {
