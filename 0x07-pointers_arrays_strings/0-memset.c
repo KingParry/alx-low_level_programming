@@ -1,19 +1,18 @@
 #include "main.h"
-
 /**
- * _memcpy - main function
- * @dest: input
- * @src: input
+ * _memset - main entry
+ * @s: input
+ * @b: input
  * @n: input
- * Return: always 0
+ * Return: always0
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	int t;
 
-	for (i = 0; n > 0; i++)
+	for (t = 0; n > 0; t++)
 	{
-		s[i] = b;
+		s[t] = b;
 		n--;
 	}
 	return (s);
