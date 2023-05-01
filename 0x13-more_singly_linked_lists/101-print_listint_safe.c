@@ -1,22 +1,22 @@
 #include "lists.h"
 
 /**
- * free_listp - main function
+ * free_listp - main entry
  * @head: input
  * Return: Always 0
  */
 void free_listp(listp_t **head)
 {
-	listp_t *k;
-	listp_t *j;
+	listp_t *r;
+	listp_t *w;
 
 	if (head != NULL)
 	{
-		j = *head;
-		while ((k = j) != NULL)
+		w = *head;
+		while ((r = w) != NULL)
 		{
-			j = j->next;
-			free(k);
+			w = w->next;
+			free(r);
 		}
 		*head = NULL;
 	}
@@ -29,39 +29,39 @@ void free_listp(listp_t **head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t v = 0;
-	listp_t *hptr, *n, *v;
+	size_t numnodes = 0;
+	listp_t *hptr, *i, *j;
 
 	hptr = NULL;
 	while (head != NULL)
 	{
-		n = malloc(sizeof(listp_t));
+		i = malloc(sizeof(listp_t));
 
-		if (n == NULL)
+		if (i == NULL)
 			exit(98);
 
-		n->p = (void *)head;
-		n->next = hptr;
-		hptr = n;
+		i->p = (void *)head;
+		i->next = hptr;
+		hptr = i;
 
-		v = hptr;
+		j = hptr;
 
-		while (v->next != NULL)
+		while (j->next != NULL)
 		{
-			v = v->next;
-			if (head == v->p)
+			j = j->next;
+			if (head == j->p)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
 				free_listp(&hptr);
-				return (v);
+				return (numnodes);
 			}
 		}
 
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
-		v++;
+		numnodes++;
 	}
 
 	free_listp(&hptr);
-	return (v);
+	return (numnodes);
 }
