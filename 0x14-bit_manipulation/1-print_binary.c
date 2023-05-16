@@ -3,7 +3,7 @@
 /**
  * print_binary - main entry
  * @n: input
- * Return: Always 0
+ *
  */
 void print_binary(unsigned long int n)
 {
@@ -24,5 +24,4 @@ void print_binary(unsigned long int n)
 	}
 	if (!h)
 		_putchar('0');
-	return (0);
 }
